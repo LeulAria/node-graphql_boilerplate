@@ -1,0 +1,44 @@
+{
+  "name": "node_express_graphql_boilerplate",
+  "version": "0.1.0",
+  "description": "a node express starter graphql boilerpalte todo app repo",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -r esm",
+    "dev": "nodemon -r esm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeulAria/node-graphql_boilerplate.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "graphql",
+    "apollo"
+  ],
+  "author": "leularia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeulAria/node-graphql_boilerplate/issues"
+  },
+  "homepage": "https://github.com/LeulAria/node-graphql_boilerplate#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.19.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "consola": "^2.15.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "graphql": "^15.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.11.9",
+    "yup": "^0.32.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
