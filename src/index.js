@@ -1,13 +1,25 @@
 import express from 'express'
+import mongoose from 'mongoose'
 import { success, error } from 'consola'
 
-import { PORT, IN_PROD } from './config'
+import { DB, PORT, IN_PROD } from './config'
  
 const app = express();
 
 const startApp = async () => {
   try {
     
+    await mongoose.connect(DB, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useFindAndModify: false
+    })
+
+    success({
+      badge: true,
+      message: "Successfully connected to mongodb"
+    })
+
     app.listen(PORT, () => {
       success({
         badge: true,
@@ -17,6 +29,10 @@ const startApp = async () => {
     
   } catch (err) {
     console.log(err)
+    error({
+      badge: true,
+      message: err.message
+    })
   }
 }
 
