@@ -1,0 +1,4 @@
+# Test GQL for todos
+query TODO_GQL_INFO {
+  todoInfo
+}
